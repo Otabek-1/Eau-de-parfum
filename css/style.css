@@ -1,0 +1,8 @@
+@import url(./fonts.css);
+:root{
+    --montserrat:"Montserrat";
+    --fraunces:"Fraunces";
+}
+h1{
+    font-family: var(--montserrat);
+}
