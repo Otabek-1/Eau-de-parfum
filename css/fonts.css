@@ -1,8 +1,4 @@
 @font-face {
-    font-family: "Montserrat";
-    src: url(../Montserrat/Montserrat-VariableFont_wght.ttf);
-}
-@font-face {
-    font-family: "Fraunces";
-    src: url(../Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+    font-family: "HankenGrotesk";
+    src: url(../Hanken_Grotesk/HankenGrotesk-VariableFont_wght.ttf);
 }

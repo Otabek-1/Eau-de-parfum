@@ -1,113 +1,185 @@
 @import url(./fonts.css);
 
-:root {
-    --montserrat: "Montserrat";
-    --fraunces: "Fraunces";
-    --cream-bg: #e9d1ba;
-    --Pure-white: #ffffff;
-    --Aurometal-Saurus: #6C7289;
-    --Gunmetal: #1C232B;
-    --Deep-Aquamarine: #3D8168
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
 }
 
 a {
     text-decoration: none;
 }
 
-* {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+:root {
+    --hanken: "HankenGrotesk";
+    --Very-Light-blue: #ECF2FF;
+    --Gradient-1: linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%);
+    --Gradient-2: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0.00) 100%, rgba(37, 33, 201, 0.00) 100%);
+    --Light-Blue: #CAC9FF;
+    --White: #FFF;
+    --Light-Blue: #CAC9FF;
+    --Dark-Navy: #303B59;
 }
 
 body {
-    background: var(--cream-bg);
+    background: var(--Very-Light-blue);
+}
+
+.box {
+    width: 736px;
+    height: 512px;
     display: flex;
-    justify-content: center;
+    margin: 284px 352px;
+    box-shadow: 0px 30px 60px 0px rgba(61, 108, 236, 0.15);
+    overflow: hidden;
+    border-radius: 32px;
+}
+
+.left {
+    width: 368px;
+    height: 512px;
+    border-radius: 32px;
+    background: var(--Gradient-1);
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.container {
-    width: 600px;
-    height: 450px;
-    background: var(--Pure-White, #FFF);
-    border-radius: 10px;
-    margin-top: 175px;
-    display: flex;
-    overflow: hidden;
+.res-title {
+    color: var(--Light-Blue);
+    font-family: var(--hanken);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 38px;
+    margin-bottom: 35px;
+}
 
+.result-board {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: var(--Gradient-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.res-number {
+    color: #FFF;
+    text-align: center;
+    font-family: var(--hanken);
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 72px;
+}
+
+.of {
+    color: #CAC9FF;
+    font-family: var(--hanken);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.text {
+    color: var(--White);
+    text-align: center;
+    font-family: var(--hanken);
+    font-size: 32px;
+    font-weight: 700;
+    margin: 28px 0px;
 }
 
 .desc {
+    color: var(--Light-Blue);
+    text-align: center;
+    font-family: var(--hanken);
+    font-size: 18px;
+    font-weight: 500;
+    width: 260px;
+}
+
+.info {
     display: flex;
     flex-direction: column;
-    padding-top: 32px;
-    row-gap: 20px;
-    padding-left: 20px;
+    align-items: center;
+    height: max-content;
 }
 
-.desc-title {
-    color: var(--Aurometal-Saurus);
-    font-family: var(--montserrat);
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-}
-
-.desc-name {
-    color: var(--Gunmetal);
-    font-family: var(--fraunces);
-    font-size: 32px;
+.sum {
+    color: var(--Dark-Navy);
+    font-family: var(--hanken);
+    font-size: 24px;
     font-weight: 700;
-    line-height: 32px;
-    /* 100% */
+    margin-top: 38px;
+    margin-left: 40px;
 }
 
-.desc-about {
-    color: var(--Aurometal-Saurus);
-    font-family: var(--montserrat);
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 23px;
+.react-img {
+    margin: 0px 12px;
 }
 
-.cost {
+.react {
+    width: 288px;
+    height: 56px;
+    border-radius: 12px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #F55;
+    margin: 16px 40px;
     display: flex;
-    justify-content: start;
-    column-gap: 19px;
-}
-
-.cost_new {
-    color: var(--Deep-Aquamarine);
-    font-family: var(--fraunces);
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 32px;
-}
-
-.prev {
-    color: var(--Aurometal-Saurus);
-    font-family: var(--montserrat);
-    font-size: 13px;
-
+    align-items: center;
+    color: #F55;
+    font-family: var(--hanken);
+    font-size: 18px;
     font-weight: 500;
-    line-height: 23px;
-    /* 176.923% */
-    text-decoration: line-through;
+
 }
 
-.sale-btn {
-    width: 236px;
-    padding: 15px;
-    border-radius: 8px;
-    background: var(--Deep-Aquamarine);
-    color: var(--Pure-white);
-    font-family: var(--montserrat);
-    font-size: 14px;
-    font-weight: 700;
-    text-align: center;
+.react-text {
+    margin-left: 12px;
 }
-.logo{
-    padding: 0px 11.61px;
+
+.current-result {
+    color: var(--Dark-Navy);
+
+    font-family: var(--hanken);
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 80px;
+}
+
+.of-res {
+    opacity: .5;
+}
+
+.memory {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #FFB21E;
+    color: #FFB21E;
+}
+
+.verbal {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #00BB8F;
+    color: #00BB8F;
+}
+
+.visual {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #1125D6;
+    color: #1125D6;
+}
+
+.cont {
+    padding: 17px 107px;
+    border-radius: 128px;
+    background: var(--Dark-Navy);
+    color: var(--White);
+    font-family: var(--hanken);
+    font-size: 18px;
+    font-weight: 700;
+}
+.cont:hover{
+    background: linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%);
+
 }
